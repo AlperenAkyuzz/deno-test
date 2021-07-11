@@ -1,5 +1,6 @@
 import { Application, Router } from "https://deno.land/x/oak/mod.ts";
 import { oakCors } from "https://deno.land/x/cors/mod.ts";
+import { routes } from './routes.js';
 
 const messages = [];
 const channel = new BroadcastChannel("chat");
@@ -24,7 +25,7 @@ router
 
 const app = new Application();
 app.use(oakCors());
-app.use(router.routes());
-app.use(router.allowedMethods());
+app.use(routes.routes());
+app.use(routes.allowedMethods());
 
 addEventListener("fetch", app.fetchEventHandler());

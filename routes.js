@@ -1,7 +1,7 @@
 const router = new Router();
 router
   .get("/", (context) => {
-    context.response.body = "Merhaba Dünya!";
+    context.response.body = "Merhaba Dünyalar!";
   })
   .get("/messages", (context) => {
     context.response.body = messages;
