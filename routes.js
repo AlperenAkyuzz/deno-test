@@ -1,4 +1,4 @@
-const router = new Router();
+export const router = new Router();
 router
   .get("/", (context) => {
     context.response.body = "Merhaba Dünyalar!";
