@@ -1,6 +1,6 @@
 import { Application, Router } from "https://deno.land/x/oak/mod.ts";
 import { oakCors } from "https://deno.land/x/cors/mod.ts";
-import { routes } from './routes.js';
+import { routes } from 'https://github.com/AlperenAkyuzz/deno-test/blob/master/routes.js';
 
 const messages = [];
 const channel = new BroadcastChannel("chat");
